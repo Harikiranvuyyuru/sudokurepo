@@ -1,5 +1,5 @@
 /*
- * Program Name:solving sudoku.java
+ * Program Name:solvingSudoku.java
  * Date Created: 11/01/14
  * Author: Hari kiran Vuyyuru
  * Purpose: Solving the sudoku puzzle 
@@ -90,7 +90,7 @@ public class SolvingSudoku
 	
 	
 	/* 
-	*  this file reads the input.csv file and returns the initial Sudoku board
+	*  this method reads the input.csv file and returns the initial Sudoku board
 	*  if you want to try invalid input format, change value in the FileReader from input.csv to invalid_format_input.csv
 	*  if you want to try invalid numbers in the input file ,change value  in the FileReader from input.csv to invalid_number_input.csv
 	*/
@@ -147,7 +147,7 @@ public class SolvingSudoku
 			}
 		}
 	 
-   // this is the core program that fills the sudoku board with valid values and if there is no valid value it back tracks and tries with the incremented value
+   // this is the core program that fills the sudoku board with valid values and if there are no valid values it backtracks and tries with the incremented value
 	public static boolean solveSudoku(int rownum, int colnum, int[][] board) {
 		
 		if(rownum == 9) {
